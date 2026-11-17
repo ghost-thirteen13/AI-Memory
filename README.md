@@ -1,6 +1,7 @@
 # AI-Memory
 
 零第三方依赖（纯 Python 标准库）的 AI 记忆系统，由两个独立子系统组成。
+参考项目：**nanocode**（提供harness骨架） + **AI Memory**（自己做的）
 
 ## 这是什么
 
@@ -11,7 +12,8 @@
 
 ## 核心思想
 
-一句话：**loop + state**。harness 让 agent 跑起来（loop），记忆让 agent 跨对话不遗忘（state）。
+核心：**loop + state**
+harness 让 agent 跑起来（loop），记忆让 agent 跨对话不遗忘（state）。
 
 「让 AI 自己管理记忆」的载体，是 loop 里的 tool 机制：把 `Memory.add/retrieve` 包成两个工具，模型自己决定何时存、何时查，人只拿哈希做外部约束。
 
