@@ -1,0 +1,9 @@
+# 密钥
+.env
+
+# Python 运行时
+__pycache__/
+*.pyc
+
+# 运行产物（SQLite 数据库）
+*.db
